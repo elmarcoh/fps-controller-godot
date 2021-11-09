@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Ground.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Obstacle.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=3]
+
+[node name="World" type="Spatial"]
+
+[node name="Ground" parent="." instance=ExtResource( 1 )]
+
+[node name="Obstacle" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.891018, 0, 0, 0, 9.26117, 0, 0, 0, 8.06552, 33.8165, 1.68661, 18.8754 )
+
+[node name="Obstacle2" parent="." instance=ExtResource( 2 )]
+transform = Transform( 3.59923, 0, 0, 0, 4.33506, 0, 0, 0, -4.56196, -12.8976, 1.68661, -8.0512 )
+
+[node name="Obstacle4" parent="." instance=ExtResource( 2 )]
+transform = Transform( 3.48096, -3.92419, 0, 0.891338, 14.5398, -1.03273, -0.207159, -3.37924, -4.44353, 19.4501, 6.2838, -5.60273 )
+
+[node name="Obstacle3" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1.00191, 0, 0, 0, 1.00191, 0, 0, 0, 1.00191, -11.4685, 6.029, 18.3661 )
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
