@@ -24,6 +24,7 @@ func _ready():
 func _input(event):
 	if event is InputEventMouseMotion:
 		camRoot.rotate_x(deg2rad(event.relative.y * MOUSE_SENSITIVITY * -1))
+		camRoot.rotation_degrees.x = clamp(camRoot.rotation_degrees.x, -75, 75)
 		self.rotate_y(deg2rad(event.relative.x * MOUSE_SENSITIVITY * -1))
 
 func _process(delta):
